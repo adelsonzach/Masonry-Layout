@@ -1,0 +1,42 @@
+/* Masonry Layout Project 5/30/25 */
+
+body {
+	background-color: red;
+}
+
+main {
+	max-width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h2	{
+	text-align: center;
+	color: black;
+	text-shadow: blue 2px 1px 4px;
+	font-size: 2em;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+section#gallery {
+	column-count: 3;
+	column-gap: 25px;
+}
+
+div.item{
+	margin-bottom: 15px;
+}
+
+/* Media query for tabletor smaller screens */
+
+@media only screen and (max-width: 760px) {
+	section#gallery {
+		column-count: 2;
+		column-gap: 12px;
+	}
+}
